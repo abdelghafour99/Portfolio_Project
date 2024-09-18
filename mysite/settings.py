@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    #'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'phonenumber_field',
+    #'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -90,20 +90,20 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
+#AUTH_PASSWORD_VALIDATORS = [
+#   {
+#        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+#    },
+#    {
+#        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+#    },
+#    {
+#        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+#    },
+#    {
+#        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+#    },
+#]
 
 
 # Internationalization
@@ -127,17 +127,17 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
-LOGIN_REDIRECT_URL = 'index.html'
-LOGIN_URL = 'login'
+#CRISPY_TEMPLATE_PACK = 'bootstrap4'
+#LOGIN_REDIRECT_URL = 'index.html'
+#LOGIN_URL = 'login'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "oussistore@gmail.com"
-EMAIL_HOST_PASSWORD = "12345"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = "smtp.gmail.com"
+#EMAIL_HOST_USER = "oussistore@gmail.com"
+#EMAIL_HOST_PASSWORD = "12345"
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+#DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
 STATICFILES_DIRS =[
@@ -146,7 +146,7 @@ STATICFILES_DIRS =[
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    "django.core.context_processors.auth",
+    #"django.core.context_processors.auth",
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
